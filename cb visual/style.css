@@ -1,0 +1,208 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    padding: 20px;
+    color: #333;
+}
+
+.container-fluid {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1a3a5a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Formulário de Cadastro */
+.form-section {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#aprForm {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+#aprForm input {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    min-width: 200px;
+    transition: border-color 0.3s;
+}
+
+#aprForm input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.btn-submit {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background: #218838;
+}
+
+/* Barra de Pesquisa */
+.search-section {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#searchInput {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 25px;
+    border: 2px solid #a6bddb;
+    border-radius: 30px;
+    font-size: 15px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Tabela Personalizada */
+.table-wrapper {
+    overflow-x: auto;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px; /* Fonte menor para caber todas as colunas */
+    min-width: 1300px;
+}
+
+th {
+    background-color: #a6bddb; /* Azul claro conforme imagem */
+    color: #000;
+    padding: 12px 8px;
+    border: 1px solid #7c90a9;
+    text-align: center;
+    vertical-align: middle;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: center;
+    background: #fff;
+}
+
+tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+/* Inputs de Data dentro da Tabela */
+.date-input {
+    width: 100%;
+    border: 1px solid transparent;
+    background: transparent;
+    text-align: center;
+    font-size: 11px;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.date-input:hover {
+    border: 1px solid #3498db;
+    background: #fff;
+}
+
+.date-input:focus {
+    outline: none;
+    background: #e8f0fe;
+    border: 1px solid #3498db;
+}
+
+/* Botão Excluir */
+.btn-delete {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.btn-delete:hover {
+    background: #c82333;
+}
+
+.no-results {
+    padding: 30px;
+    color: #777;
+    font-size: 14px;
+}
+
+/* ... (Mantenha o restante do código anterior) ... */
+
+/* Estilização da Logo */
+.logo-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+    margin-bottom: 10px;    /* Espaço entre a logo e o título */
+    padding: 10px;
+}
+
+.logo-img {
+    max-width: 200px;       /* Define a largura máxima da logo */
+    height: auto;           /* Mantém a proporção */
+    object-fit: contain;
+    /* Caso não tenha imagem ainda, uma borda suave ajuda a visualizar o espaço */
+    border-radius: 4px;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1a3a5a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #a6bddb; /* Linha decorativa abaixo do título */
+    padding-bottom: 10px;
+}
+
+/* Ajuste no container para dar destaque */
+.container-fluid {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15); /* Sombra mais forte para destaque */
+    width: 100%;
+    margin-top: 10px;
+}

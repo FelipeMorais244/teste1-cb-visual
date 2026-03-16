@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de APR - Fluxo de Trabalho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="logo-container">
+            <img src="CB Visual (1).jpg" alt="Logo Empresa" class="logo-img">
+        </div>
+
+        <header>
+            <h1>Controle de Fluxo APR REDE SIM</h1>
+        </header>
+
+        <section class="form-section">
+            <form id="aprForm">
+                <input type="text" id="equipe" placeholder="Equipe" required>
+                <input type="text" id="posto" placeholder="Posto" required>
+                <button type="submit" class="btn-submit">Novo Registro</button>
+            </form>
+        </section>
+
+        <section class="search-section">
+            <input type="text" id="searchInput" placeholder="🔍 Pesquisar por Posto ou Equipe..." onkeyup="renderTable()">
+        </section>
+
+        <section class="table-section">
+            <div class="table-wrapper">
+                <table id="aprTable">
+                    <thead>
+                        <tr>
+                            <th>EQUIPE</th>
+                            <th>POSTO</th>
+                            <th>APR FINALIZADA (LOZANE)</th>
+                            <th>APR IMPRESSA/ENTREGUE (GEOVANE)</th>
+                            <th>PROGRAMAÇÃO OBRA (HEITOR)</th>
+                            <th>APR REENVIADA P/ OBRA (GEOVANE)</th>
+                            <th>APR RECEBIDA/ASSINADA EM OBRA</th>
+                            <th>APR RECEBIDA (FELIPE)</th>
+                            <th>APR-PT SALVAS DRIVE (LOZANE)</th>
+                            <th>AÇÕES</th>
+                        </tr>
+                    </thead>
+                    <tbody id="aprTableBody"></tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
